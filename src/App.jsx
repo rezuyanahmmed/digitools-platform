@@ -5,6 +5,7 @@ import States from "./Components/navbar/States";
 import Cart from "./Components/navbar/Cart"; // Premium এর বদলে Cart ব্যবহার করুন
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import bannerPhoto from "./assets/banner.png";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -32,7 +33,7 @@ function App() {
       <Banner /> */}
 
       <Navbar cartCount={cartItems.length}></Navbar>
-      <Banner></Banner>
+      <Banner bannerImg={bannerPhoto}></Banner>
       <States />
       <Cart cartItems={cartItems}
         onAddToCart={handleAddToCart}
