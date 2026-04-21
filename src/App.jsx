@@ -1,48 +1,8 @@
-// import { useState } from 'react'
-
-// import './App.css'
-// import Navbar from './Components/navbar/Navbar'
-// import bannerImg from './assets/banner.png';
-
-// import Banner from './Components/navbar/Banner';
-// import States from './Components/navbar/States';
-// import Premium from './Components/navbar/Premium';
-
-// function App() {
-
-
-//   return (
-//     <>
-//       {/* Navbar */}
-//       <Navbar></Navbar>
-
-//       <Banner bannerImg={bannerImg} />
-//       <States></States>
-
-//       <Premium></Premium>
-//       <div>
-//         <h2>kshdf</h2>
-//       </div>
-
-
-
-
-
-//     </>
-//   )
-// }
-
-// export default App
-
-
 import { useState } from "react";
 import Navbar from "./Components/navbar/Navbar";
 import Banner from "./Components/navbar/Banner";
 import States from "./Components/navbar/States";
-import Premium from "./Components/navbar/Premium";
-import Steps from "./Components/navbar/Steps";
-import Pricing from "./Components/navbar/Pricing";
-import Footer from "./Components/navbar/Footer";
+import Cart from "./Components/navbar/Cart"; // Premium এর বদলে Cart ব্যবহার করুন
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -68,18 +28,17 @@ function App() {
   return (
     <>
       <ToastContainer position="top-right" autoClose={2000} />
-      <Navbar cartCount={cartItems.length} />
-      <Banner />
+      {/* <Navbar cartCount={cartItems.length} />
+      <Banner /> */}
+
+      <Navbar cartCount={cartItems.length}></Navbar>
+      <Banner></Banner>
       <States />
-      <Premium
-        cartItems={cartItems}
+      <Cart cartItems={cartItems}
         onAddToCart={handleAddToCart}
         onRemoveFromCart={handleRemoveFromCart}
-        onCheckout={handleCheckout}
-      />
-      <Steps />
-      <Pricing />
-      <Footer />
+        onCheckout={handleCheckout}></Cart>
+
     </>
   );
 }

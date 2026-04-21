@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({ cartCount }) => {
   return (
     <div className="navbar bg-base-100  w-[80%] mx-auto">
       <div className="navbar-start">

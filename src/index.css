@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@plugin "daisyui"; /* এখানে সেমিকোলন নিশ্চিত করুন */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
