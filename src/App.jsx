@@ -47,7 +47,7 @@ function App() {
           <p>Start using premium digital tools in minutes, not hours.</p>
         </div>
         {/* 1st */}
-        <div>
+        <div className="flex w-[80%] mx-auto space-x-3">
           <div className="card w-96 bg-base-100 card-lg shadow-sm">
             <div className="card-body">
               <h2 className="card-title">Large Card</h2>
