@@ -40,13 +40,45 @@ function App() {
         onRemoveFromCart={handleRemoveFromCart}
         onCheckout={handleCheckout}></Cart>
 
-        {/* Get started section */}
+      {/* Get started section */}
+      <div>
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="font-bold text-2xl">Get Started in 3 Steps</h1>
+          <p>Start using premium digital tools in minutes, not hours.</p>
+        </div>
+        {/* 1st */}
         <div>
-          <div className="flex flex-col justify-center items-center">
-            <h1 className="font-bold text-2xl">Get Started in 3 Steps</h1>
-            <p>Start using premium digital tools in minutes, not hours.</p>
+          <div className="card w-96 bg-base-100 card-lg shadow-sm">
+            <div className="card-body">
+              <h2 className="card-title">Large Card</h2>
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div className="justify-end card-actions">
+                <button className="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          {/* 2nd */}
+          <div className="card w-96 bg-base-100 card-lg shadow-sm">
+            <div className="card-body">
+              <h2 className="card-title">Large Card</h2>
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div className="justify-end card-actions">
+                <button className="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          {/* 3rd */}
+          <div className="card w-96 bg-base-100 card-lg shadow-sm">
+            <div className="card-body">
+              <h2 className="card-title">Large Card</h2>
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div className="justify-end card-actions">
+                <button className="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
     </>
   );
