@@ -6,6 +6,7 @@ import Cart from "./Components/navbar/Cart"; // Premium এর বদলে Cart
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import bannerPhoto from "./assets/banner.png";
+import userImg from "./assets/user.png"
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -49,12 +50,10 @@ function App() {
         {/* 1st */}
         <div className="flex w-[80%] mx-auto space-x-3">
           <div className="card w-96 bg-base-100 card-lg shadow-sm">
-            <div className="card-body">
-              <h2 className="card-title">Large Card</h2>
-              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-              <div className="justify-end card-actions">
-                <button className="btn btn-primary">Buy Now</button>
-              </div>
+            <div className="card-body flex justify-center items-center">
+              <img className="h-12 w-12 bg-purple-200 p-2 rounded-full" src={userImg} alt="" />
+              <h4 className="font-bold ">Create Account</h4>
+              <p className="text-gray-600">Sign up for free in seconds. No credit card required to get started.</p>
             </div>
           </div>
           {/* 2nd */}
