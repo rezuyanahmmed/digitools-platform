@@ -42,7 +42,10 @@ function App() {
 
         {/* Get started section */}
         <div>
-          
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="font-bold text-2xl">Get Started in 3 Steps</h1>
+            <p>Start using premium digital tools in minutes, not hours.</p>
+          </div>
         </div>
 
     </>
