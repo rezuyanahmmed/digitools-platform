@@ -41,7 +41,7 @@ const Cart = ({ cartItems, onAddToCart, onRemoveFromCart, onCheckout }) => {
   const total = cartItems.reduce((sum, item) => sum + item.price, 0);
 
   return (
-    <section className="py-16 px-4 bg-white">
+    <section className="py-16 px-4 bg-white w-[80%] mx-auto">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-2">
           Premium Digital Tools
