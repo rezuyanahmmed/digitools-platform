@@ -40,6 +40,11 @@ function App() {
         onRemoveFromCart={handleRemoveFromCart}
         onCheckout={handleCheckout}></Cart>
 
+        {/* Get started section */}
+        <div>
+          
+        </div>
+
     </>
   );
 }
