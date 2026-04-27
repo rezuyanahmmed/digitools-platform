@@ -61,7 +61,7 @@ function App() {
                 <p className="text-xl text-gray-600 text-[15px] mt-5">
                   <span className="text-2xl text-black font-bold">$0</span>/month</p>
               </div>
-              <ul className="mt-6 flex flex-col gap-2 text-xs font-semibold text-gray-500">
+              <ul className="mt-2 flex flex-col gap-2 text-xs font-semibold text-gray-500">
                 <li>
                   <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                   <span>Access to 10 free tools</span>
@@ -80,14 +80,14 @@ function App() {
                 </li>
                 
               </ul>
-              <div className="mt-6">
-                <button className="btn btn-primary btn-block">Subscribe</button>
+              <div className="mt-19">
+                <button className="btn btn-primary btn-block rounded-full">Get Started Free</button>
               </div>
             </div>
           </div>
 
           {/* 2nd */}
-          <div className="card w-96 bg-base-100 shadow-sm">
+          <div className="card w-96 bg-base-100 shadow-sm bg-gradient-to-r from-[#642ef7] to-purple-600">
             <div className="card-body">
               <span className="text-xl font-bold">Pro</span>
               <div className="flex justify-between flex-col">
@@ -95,7 +95,7 @@ function App() {
                 <p className="text-xl text-gray-600 text-[15px] mt-5">
                   <span className="text-2xl text-black font-bold">$29</span>/month</p>
               </div>
-              <ul className="mt-6 flex flex-col gap-2 text-xs font-semibold text-gray-500">
+              <ul className="mt-2 flex flex-col gap-2 text-xs font-semibold text-white">
                 <li>
                   <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                   <span>Access to all premium tools</span>
@@ -123,7 +123,7 @@ function App() {
                 
               </ul>
               <div className="mt-6">
-                <button className="btn btn-primary btn-block">Subscribe</button>
+                <button className="btn rounded-full btn-block bg-white text-purple-700">Start Pro Trial</button>
               </div>
             </div>
           </div>
@@ -137,7 +137,7 @@ function App() {
                 <p className="text-xl text-gray-600 text-[15px] mt-5">
                   <span className="text-2xl text-black font-bold">$99</span>/month</p>
               </div>
-              <ul className="mt-6 flex flex-col gap-2 text-xs font-semibold text-gray-500">
+              <ul className="mt-2 flex flex-col gap-2 text-xs font-semibold text-gray-500">
                 <li>
                   <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                   <span>Everything in Pro</span>
@@ -165,7 +165,7 @@ function App() {
                 
               </ul>
               <div className="mt-6">
-                <button className="btn btn-primary btn-block">Subscribe</button>
+                <button className="btn btn-primary btn-block rounded-full">Contact Sales</button>
               </div>
             </div>
           </div>
