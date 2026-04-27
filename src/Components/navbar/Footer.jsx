@@ -10,7 +10,13 @@ const Footer = () => {
         <h1 className="text-3xl text-white">DigiTools</h1>
         <p className="text-gray-400">Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
       </div>
-      
+      <nav>
+        <h6 className="footer-title">Services</h6>
+        <a className="link link-hover">Branding</a>
+        <a className="link link-hover">Design</a>
+        <a className="link link-hover">Marketing</a>
+        <a className="link link-hover">Advertisement</a>
+      </nav>
       <nav>
         <h6 className="footer-title">Company</h6>
         <a className="link link-hover">About us</a>
