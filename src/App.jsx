@@ -55,10 +55,10 @@ function App() {
           {/* 1st */}
           <div className="card w-96 bg-base-100 shadow-sm">
             <div className="card-body">
-              <span className="badge badge-xs badge-warning">Most Popular</span>
-              <div className="flex justify-between">
-                <h2 className="text-3xl font-bold">Premium</h2>
-                <span className="text-xl">$29/mo</span>
+              <span className="text-xl font-bold">Starter</span>
+              <div className="flex justify-between flex-col">
+                <p>Perfect for getting started</p>
+                <p className="text-xl">$29/mo</p>
               </div>
               <ul className="mt-6 flex flex-col gap-2 text-xs">
                 <li>
