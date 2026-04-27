@@ -93,10 +93,10 @@ function App() {
       </footer>
       
 
-      <div className="flex justify-between bg-[#101727] h-[100px] pl-10">
+      <div className="flex justify-between bg-[#101727] h-[100px] pl-10 pt-10">
       
-        <p className="text-white">© 2026 Digitools. All rights reserved.</p>
-        <div className="text-white pr-10">
+        <p className="text-gray-400">© 2026 Digitools. All rights reserved.</p>
+        <div className="text-gray-400 pr-10">
           <a href="">Praivacy Policy</a>
           <a href="">Terms of Service</a>
           <a href="">Cookis</a>
