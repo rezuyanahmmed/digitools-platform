@@ -10,7 +10,7 @@ const Ready = () => {
       </div>
       <nav>
         <div className="grid grid-flow-col gap-4 -mt-14">
-          <button class="btn bg-white rounded-full">Explore Products</button>
+          <button className="btn bg-white rounded-full">Explore Products</button>
           <button className="btn btn-outline btn-primary rounded-full text-white border-white">View Pricing</button>
 
         </div>
