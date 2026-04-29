@@ -6,10 +6,10 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="footer sm:footer-horizontal bg-[#101727] text-neutral-content p-10">
-      {/* <div className="w-[300px]">
+      <div className="w-[300px]">
         <h1 className="text-3xl text-white">DigiTools</h1>
         <p className="text-gray-400">Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
-      </div> */}
+      </div>
       <nav>
         <h6 className="footer-title">Services</h6>
         <a className="link link-hover">Branding</a>
