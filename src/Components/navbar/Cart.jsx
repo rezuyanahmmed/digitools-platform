@@ -11,31 +11,30 @@ const Cart = ({ cartItems, onAddToCart, onRemoveFromCart, onCheckout }) => {
     "best seller": "bg-yellow-100 text-yellow-700",
   };
 
-  // Add to Cart Function with Toast
+  // Add to Cart Function
   const handleAdd = (product) => {
     const exists = cartItems.find((item) => item.id === product.id);
     if (exists) {
-      toast.warning(`${product.name} অলরেডি কার্টে আছে!`);
       return;
     }
     onAddToCart(product);
-    toast.success(`${product.name} কার্টে যোগ হয়েছে! 🎉`);
+    toast.success(`${product.name} Added to cart`);
   };
 
-  // Remove Function with Toast
+  // Remove Function
   const handleRemove = (product) => {
     onRemoveFromCart(product.id);
-    toast.error(`${product.name} কার্ট থেকে রিমুভ করা হয়েছে।`);
+    toast.error(`${product.name} Removed from the cart`);
   };
 
-  // Checkout Function with Toast
+  // Checkout Function
   const handleCheckout = () => {
     if (cartItems.length === 0) {
-      toast.warning("আপনার কার্ট খালি!");
+      toast.warning("Your cart section is empty");
       return;
     }
     onCheckout();
-    toast.success("চেকআউট সফল হয়েছে! 🛍️ ধন্যবাদ!");
+    toast.success("Cheakout succesfull,thanks");
   };
 
   const total = cartItems.reduce((sum, item) => sum + item.price, 0);
@@ -50,7 +49,7 @@ const Cart = ({ cartItems, onAddToCart, onRemoveFromCart, onCheckout }) => {
           Choose from our curated collection of premium digital products.
         </p>
 
-        {/* --- Toggling Buttons --- */}
+        {/* Toggling */}
         <div className="flex justify-center gap-3 mb-10">
           <button
             onClick={() => setActiveTab("products")}
@@ -72,7 +71,7 @@ const Cart = ({ cartItems, onAddToCart, onRemoveFromCart, onCheckout }) => {
           </button>
         </div>
 
-        {/* --- Product Cards Section --- */}
+        {/*Product Cards Section*/}
         {activeTab === "products" && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {productsData.map((product) => (
@@ -111,19 +110,20 @@ const Cart = ({ cartItems, onAddToCart, onRemoveFromCart, onCheckout }) => {
           </div>
         )}
 
-        {/* --- Cart Section --- */}
+        {/*Cart Section*/}
         {activeTab === "cart" && (
           <div className="max-w-2xl mx-auto border rounded-2xl p-6 shadow">
             <h3 className="text-2xl font-bold mb-4 text-gray-800">Your Cart</h3>
             {cartItems.length === 0 ? (
               <p className="text-center text-gray-400 py-10 text-lg">
-                🛒 Your cart is empty. Add some products!
+                 Your cart is empty now
               </p>
             ) : (
               <>
                 <div className="space-y-3 mb-4">
                   {cartItems.map((item) => (
-                    <div key={item.id} className="flex items-center justify-between border-b pb-3">
+                    <div key={item.id} className="flex items-center justify-between
+                    bg-gray-50 rounded-2xl p-3">
                       <div className="flex items-center gap-3">
                         <span className="text-2xl">{item.icon}</span>
                         <div>
