@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import productsData from "../../Data/Product.json"; // তোমার ফোল্ডার পাথ অনুযায়ী চেক করো
+import productsData from "../../Data/Product.json"; 
 import { toast } from "react-toastify";
 
 const Cart = ({ cartItems, onAddToCart, onRemoveFromCart, onCheckout }) => {
